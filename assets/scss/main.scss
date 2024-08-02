@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "_root";
+@import "_reset";
+@import "_assets";
+@import "_checkbox";
+
+.header {
+    background-image: url("../img/bg/bg_firstblock.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0 0 0;
+    &__navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $white2;
+    }
+    &__navbar-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__navbar-menu {
+        nav {
+            margin: 0 20px;
+            ul {
+                display: flex;
+                li {
+                    margin: 0 10px;
+                    a {
+                        color: $white;
+                        transition: all 0.2s ease;
+                        &:hover {
+                            color: $white1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__navbar-tel {
+        display: flex;
+        align-items: center;
+        margin: 0 12px;
+        border-right: 2px solid $white2;
+        padding-right: 12px;
+        a {
+            margin: 0 20px 0 0;
+            font-size: 16px;
+            font-weight: 500;
+            color: $white;
+            transition: all 0.3s ease;
+            &:hover {
+                color: $white1;
+            }
+        }
+    }
+    &__navbar-social {
+        display: flex;
+        a {
+            margin: 0 5px;
+            cursor: pointer;
+            svg {
+                transition:
+                    fill 0.5s linear,
+                    stroke 0.5s linear;
+                &:hover {
+                    rect {
+                        fill: $white;
+                    }
+                    path {
+                        fill: #000;
+                    }
+                }
+            }
+        }
+    }
+    &__intro-block {
+        display: flex;
+    }
+    &__intro-wrapper {
+        margin: 30px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+    &__intro-checks {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 440px;
+        gap: 10px;
+        button {
+            display: flex;
+            align-items: center;
+            background: $white3;
+            color: $white;
+            backdrop-filter: blur(2px);
+            border: 0px none;
+            outline: 0px none;
+            border-radius: 30px;
+            padding: 10px 12px;
+            font-size: 16px;
+            font-weight: 400;
+            img {
+                margin: 0 6px 0 0;
+            }
+        }
+    }
+    &__intro-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-top: auto;
+        padding-bottom: 10%;
+        h1 {
+            color: $white;
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 30px;
+            max-width: 60%;
+        }
+        svg {
+            margin: 20px 0;
+            cursor: pointer;
+            &:hover {
+                transition: fill 0.7s ease-in-out;
+                fill: $white;
+                path {
+                    fill: #000;
+                }
+            }
+        }
+    }
+    &__intro-slider {
+        border-left: 1px solid $white2;
+        padding: 30px 30px 10% 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-top: auto;
+        height: 140vh;
+    }
+    &__slider-wrapper {
+        width: 400px;
+        padding: 14px;
+        margin: 20px;
+        border-radius: 12px;
+        background: $white2;
+        backdrop-filter: blur(4px);
+        color: $white;
+    }
+    &__slider-intro-title {
+        width: 100%;
+        h3 {
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid $white2;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    }
+    &__slider-intro-subtitle {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 12px 0;
+    }
+    &__slider-intro-subtitle-wrapper {
+        z-index: 10000;
+        p {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            max-width: 70%;
+            img {
+                width: 22px;
+                height: 22px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &__slider-intro-img {
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 8000;
+        }
+    }
+    &__slider-item {
+        button {
+            margin: 12px 0 24px 0;
+            img {
+                margin: 0 5px;
+            }
+            &:hover {
+                background-color: $blue2;
+                img {
+                    transition: all 0.3s ease;
+                    transform: translateX(5px);
+                }
+            }
+        }
+    }
+}
+.villages {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: $white;
+    margin-top: -20px;
+    padding: 10% 0;
+}
+.cottages {
+    background-color: $blue3;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 8% 0;
+}
+.house {
+    background-color: $white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -20px;
+    padding: 8% 0;
+}
+
+.conditions {
+    background-image: url("../img/bg/bg_conditions.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: $blue3;
+    padding: 80px 0 20px 0;
+    &__intro {
+        h1 {
+            color: $white;
+            font-size: 50px;
+            font-weight: 500;
+            line-height: 54px;
+            text-align: center;
+        }
+    }
+    &__wrapper {
+        margin: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    &__card {
+        max-width: 368px;
+        width: 100%;
+        background-color: $white3;
+        backdrop-filter: blur(4px);
+        border-radius: 14px;
+        padding: 20px;
+        position: relative;
+    }
+    &__card-title {
+        padding: 18px 10px;
+        border: 1px solid $white2;
+        border-radius: 12px;
+        h2 {
+            color: $white;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 18px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+    &__card-subtitle {
+        margin: 15px 0;
+        display: flex;
+        p {
+            display: flex;
+            flex-direction: column;
+            color: $white;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 17px;
+            margin: 10px 0;
+            max-width: 240px;
+            img {
+                width: 22px;
+                height: 22px;
+                margin: 10px 0;
+            }
+        }
+    }
+    &__card-subtitle-img {
+        position: absolute;
+        right: 0;
+        z-index: 8000;
+        img {
+            max-width: 180px;
+        }
+    }
+}
+
+.territory {
+    background-color: $blue3;
+    padding: 8% 0;
+    &__cards {
+        margin: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__card-item {
+        padding: 10px 20px;
+        background-color: $white;
+        border-radius: 12px;
+        width: 270px;
+    }
+    &__card-img {
+        img {
+            margin: 10px 0;
+        }
+    }
+    &__card-title {
+        margin: 12px 0;
+        h3 {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 18px;
+        }
+    }
+}
+.video {
+    background-color: $white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -20px;
+    padding: 8% 0;
+    &__slider-btn {
+        display: flex;
+        gap: 10px;
+        button {
+            background: transparent;
+            border: 0px none;
+            outline: 0px none;
+            cursor: no-drop;
+            opacity: 1;
+        }
+    }
+}
+.feedback {
+    background-color: $blue3;
+    padding: 8% 0;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__intro-title {
+        h3 {
+            font-size: 46px;
+            line-height: 46px;
+            font-weight: 500;
+            span {
+                color: $blue;
+            }
+        }
+        p {
+            margin: 32px 0;
+            font-size: 18px;
+            font-weight: 400;
+            color: $gray;
+        }
+    }
+    &__bank-wrapper {
+        overflow: hidden;
+        white-space: nowrap;
+        max-width: 600px;
+        position: relative;
+        padding: 12px 0;
+        margin: 15px 0;
+        border-top: 2px solid $white4;
+        border-bottom: 2px solid $white4;
+    }
+    &__bank-inner {
+        display: inline-block;
+        white-space: nowrap;
+        animation: scroll 20s linear infinite;
+    }
+    &__bank-item {
+        display: inline-block;
+        margin-right: 20px;
+        img {
+            display: inline-block;
+            width: 100%; 
+            height: 100%;
+            vertical-align: middle; 
+        }
+    }
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+    &__form {
+        background-color: $white;
+        padding: 30px;
+        border-radius: 12px;
+        min-width: 566px;
+        form {
+            display: flex;
+            flex-direction: column;
+            button {
+                margin: 5px 0;
+            }
+        }
+    }
+    &__form-input {
+        padding: 18px 18px;
+        margin: 10px 0;
+        background-color: $blue3;
+        border: 0px none;
+        border-radius: 12px;
+        outline: 0px none;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 400;
+    }
+    &__form-polit {
+        margin: 10px 0;
+        label {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+            color: $gray2;
+            a {
+                margin-left: 4px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 14px;
+                text-decoration: underline;
+                text-decoration-color: $blue;
+            }
+        }
+    }
+}
