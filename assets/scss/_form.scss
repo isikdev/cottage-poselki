@@ -1,0 +1,85 @@
+@import "_root";
+.form {
+    background-color: $white;
+    padding: 30px;
+    border-radius: 12px;
+    min-width: 566px;
+    display: flex;
+    flex-direction: column;
+    form {
+        display: flex;
+        flex-direction: column;
+        button {
+            margin: 5px 0;
+        }
+    }
+    &__form-input {
+        padding: 18px 18px;
+        margin: 10px 0;
+        background-color: $blue3;
+        border: 0px none;
+        border-radius: 12px;
+        outline: 0px none;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 400;
+    }
+    &__form-polit {
+        margin: 10px 0;
+        label {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+            color: $gray2;
+            a {
+                margin-left: 4px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 14px;
+                text-decoration: underline;
+                text-decoration-color: $blue;
+            }
+        }
+    }
+}
+.checkbox {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &-label {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+    }
+    &-view {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        border: 1px solid #005aa3;
+        border-radius: 4px;
+        background: #fff;
+        transition: 0.3s;
+    }
+    &-icon {
+        opacity: 0;
+        transition: 0.3s;
+        width: 10px;
+        height: 10px;
+        path {
+            fill: #005aa3;
+        }
+    }
+    &:checked + .checkbox-view {
+        background-color: transparent;
+        border: 1px solid #005aa3;
+    }
+    &:checked + .checkbox-view .checkbox-icon {
+        opacity: 1;
+        fill: #005aa3;
+    }
+}
