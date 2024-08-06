@@ -268,7 +268,7 @@
     &__pay-path {
         display: flex;
         align-items: center;
-        padding-bottom: 2%;
+        padding: 20px 0;
         a {
             margin: 0 20px 0 0;
             font-size: 16px;
@@ -281,6 +281,141 @@
             font-size: 16px;
             line-height: 16px;
             font-weight: 400;
+        }
+    }
+    &__villages {
+        background-image: url("../img/bg/bg_villages.webp");
+        background-color: $black;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px 0 0 0;
+    }
+    &__villages-path {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $white2;
+        padding: 20px 0;
+        a {
+            margin: 0 20px 0 0;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: 400;
+            color: $white;
+        }
+        p {
+            color: $white1;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: 400;
+        }
+    }
+    &__villages-intro-block {
+        .header__intro-wrapper {
+            margin: unset;
+            width: 100%;
+        }
+    }
+    &__subtitle-item {
+        color: $white;
+        padding: 6% 0 2% 0;
+        h1 {
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 54px;
+        }
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            margin: 42px 0;
+        }
+    }
+    &__villages-intro-checks {
+        padding-bottom: 14%;
+    }
+    &__finishing {
+        background-image: url("../img/bg/bg_finishing.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 2% 0 12% 0;
+        .header__pay-path {
+            border-bottom: 1px solid $white2;
+        }
+    }
+    &__finishing-intro-item {
+        text-align: center;
+        margin: 50px auto;
+        h1 {
+            color: $white;
+            font-size: 60px;
+            line-height: 60px;
+            font-weight: 500;
+        }
+        p {
+            color: $white;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            margin: 30px 0;
+        }
+    }
+    &__finishing-card-item {
+        .territory__card-img {
+            display: flex;
+            align-items: center;
+            h3 {
+                font-size: 18px;
+                line-height: 18px;
+                font-weight: 500;
+                color: $black;
+                margin-left: 10px;
+            }
+        }
+        .territory__card-title {
+            p {
+                color: $gray;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+            }
+        }
+    }
+    &__finishing-img {
+        img {
+            border-radius: 12px;
+        }
+    }
+    &__finishing-subtitle {
+        button {
+            margin: 14px 0 0 0;
+        }
+    }
+    &__mortgage {
+        background-image: url("../img/bg/bg_mortgage.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 2% 0 12% 0;
+        .header__pay-path {
+            border-bottom: 1px solid $white2;
+        }
+    }
+    &__mortgage-cards {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__mortgage-card-item {
+        background-color: $white3;
+        backdrop-filter: blur(8px);
+        border-radius: 14px;
+        padding: 20px;
+        p {
+            color: $white;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 20px;
+            margin: 20px 0;
         }
     }
 }
@@ -924,5 +1059,77 @@
     &__subtitle-first {
         border-bottom: 1px solid $white4;
         padding-bottom: 20px;
+    }
+}
+.poselki {
+    background-color: $white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -20px;
+    padding: 8% 0;
+}
+.parametrs {
+    background-color: $blue3;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 8% 0;
+    &__intro {
+        h1 {
+            text-align: center;
+            margin: 0 auto;
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 60px;
+            color: $black;
+        }
+    }
+}
+.documents {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #ffffff;
+    margin-top: -20px;
+    padding: 10% 0;
+    &__card-item {
+        display: flex;
+        flex-direction: column;
+        background-color: $blue3;
+        padding: 30px;
+        border-radius: 12px;
+    }
+    &__card-img {
+        display: flex;
+        align-items: center;
+        h4 {
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 500;
+            color: $black;
+            margin: 0 10px;
+        }
+    }
+    &__card-subtitle {
+        margin: 12px 0;
+        p {
+            color: $gray3;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 17px;
+        }
+    }
+    &__cards-wrapper-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        margin: 20px 0;
+    }
+    &__card-w30 {
+        max-width: 30%;
+        width: 100%;
+    }
+    &__card-w70 {
+        max-width: 70%;
+        width: 100%;
     }
 }
