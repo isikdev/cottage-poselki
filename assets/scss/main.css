@@ -1330,4 +1330,100 @@ td {
 .documents__card-w70 {
   max-width: 70%;
   width: 100%;
+}
+
+.home {
+  background-color: #F0F4FB;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: -20px;
+  padding: 8% 0;
+}
+.home__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 50px 0;
+}
+.home__card-item {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  align-items: self-start;
+}
+.home__card-intro h3 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.home__card-intro p {
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 400;
+  margin: 20px 0;
+  color: #5C5C5C;
+}
+.home__card-img {
+  width: 44px;
+  height: 44px;
+}
+.home__card-img img {
+  width: 44px;
+  height: 44px;
+}
+
+.info {
+  background-color: #F0F4FB;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: -20px;
+  padding: 8% 0;
+}
+.info__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.info__slider {
+  width: 566px;
+  max-height: 500px;
+  height: 100%;
+}
+.info__slider-wrapper .component__vue {
+  margin: 0;
+}
+.info__parametrs {
+  max-width: 566px;
+  max-height: 500px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+.info__parametrs button {
+  margin: 20px 0;
+}
+.info__parametr-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #F0F4FB;
+  padding: 14px;
+  border-radius: 10px;
+}
+.info__parametr-card p {
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 400;
+}
+.info__head {
+  margin-bottom: 20px;
+}
+.info__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 10px 0;
+}
+.info__body p {
+  max-width: 50%;
 }/*# sourceMappingURL=main.css.map */

@@ -1133,3 +1133,101 @@
         width: 100%;
     }
 }
+.home {
+    background-color: $blue3;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -20px;
+    padding: 8% 0;
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin: 50px 0;
+    }
+    &__card-item {
+        background-color: $white;
+        padding: 30px;
+        border-radius: 12px;
+        display: flex;
+        align-items: self-start;
+    }
+    &__card-intro {
+        h3 {
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+        p {
+            font-size: 16px;
+            line-height: 17px;
+            font-weight: 400;
+            margin: 20px 0;
+            color: $gray;
+        }
+    }
+    &__card-img {
+        width: 44px;
+        height: 44px;
+        img {
+            width: 44px;
+            height: 44px;
+        }
+    }
+}
+.info {
+    background-color: #F0F4FB;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -20px;
+    padding: 8% 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__slider {
+        width: 566px;
+        max-height: 500px;
+        height: 100%;
+    }
+    &__slider-wrapper {
+        .component__vue {
+            margin: 0;
+        }
+    }
+    &__parametrs {
+        max-width: 566px;
+        max-height: 500px;
+        padding: 30px;
+        background-color: $white;
+        border-radius: 12px;
+        button {
+            margin: 20px 0;
+        }
+    }
+    &__parametr-card {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: $blue3;
+        padding: 14px;
+        border-radius: 10px;
+        p {
+            font-size: 16px;
+            line-height: 17px;
+            font-weight: 400;
+        }
+    }
+    &__head {
+        margin-bottom: 20px;
+    }
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin: 10px 0;
+        p {
+            max-width: 50%;
+        }
+    }
+}
