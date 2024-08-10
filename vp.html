@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cottage Poselki - Каталог поселков</title>
+        <link rel="stylesheet" href="./assets/scss/main.css">
+    </head>
+    <body>
+        <header>
+            <section class="header__hp header">
+                <div class="container">
+                    <div class="header__content">
+                        <div class="header__navbar">
+                            <div class="header__navbar-logo">
+                                <a href="./index.html"><img
+                                        src="./assets/img/logo.webp"
+                                        alt="logo"></a>
+                            </div>
+                            <div class="header__navbar-links">
+                                <div class="header__navbar-menu">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#">Поселки</a></li>
+                                            <li><a href="#">Коттеджи</a></li>
+                                            <li><a
+                                                    href="./mp.html">Генплан</a></li>
+                                            <li><a href="#">Сервис</a></li>
+                                            <li><a
+                                                    href="./contacts.html">Контакты</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header__navbar-tel">
+                                    <a href="tel:+7 495 797 70 71">+7 495 797 70
+                                        71</a>
+                                    <button class="outline__btn">Заказать
+                                        звонок</button>
+                                </div>
+                                <div class="header__navbar-social">
+                                    <a class="header__navbar-social-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            width="44" height="44"
+                                            viewBox="0 0 44 44" fill="none">
+                                            <rect x="0.5" y="0.5" width="43"
+                                                height="43" rx="21.5"
+                                                stroke="white" />
+                                            <path
+                                                d="M13.6833 30.4605L14.8773 26.1021C13.9536 24.4982 13.5848 22.6344 13.8281 20.7996C14.0714 18.9648 14.9132 17.2615 16.223 15.9538C17.5328 14.646 19.2374 13.8069 21.0726 13.5665C22.9078 13.3261 24.7711 13.6978 26.3735 14.624C27.9759 15.5502 29.2281 16.9792 29.9358 18.6894C30.6435 20.3996 30.7673 22.2956 30.2879 24.0833C29.8085 25.871 28.7528 27.4506 27.2844 28.5773C25.8159 29.704 24.0168 30.3148 22.166 30.315C20.762 30.3142 19.3805 29.9619 18.1476 29.2902L13.6833 30.4605ZM18.3485 27.7721L18.6047 27.9302C19.6819 28.5682 20.9108 28.9052 22.1628 28.9059C23.7132 28.9063 25.2198 28.3913 26.4456 27.442C27.6715 26.4928 28.5471 25.163 28.9349 23.6619C29.3226 22.1607 29.2005 20.5733 28.5877 19.1491C27.9749 17.7249 26.9062 16.5448 25.5496 15.7942C24.1929 15.0436 22.6253 14.7651 21.0932 15.0026C19.5611 15.24 18.1513 15.9799 17.0855 17.106C16.0197 18.232 15.3583 19.6803 15.2054 21.2231C15.0524 22.766 15.4165 24.3159 16.2405 25.6293L16.3986 25.8934L15.6917 28.4726L18.3485 27.7721Z"
+                                                fill="white" />
+                                            <path fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M26.4026 23.904C26.3504 23.8154 26.2097 23.7633 25.9993 23.6589C25.789 23.5545 24.7564 23.0453 24.5634 22.9741C24.3705 22.903 24.2313 22.8698 24.089 23.0801C23.9467 23.2904 23.5466 23.7633 23.4248 23.904C23.3031 24.0447 23.1781 24.0621 22.9694 23.9562C22.353 23.7087 21.7842 23.356 21.2884 22.914C20.8289 22.489 20.4351 21.9982 20.1197 21.4576C19.9964 21.2473 20.1055 21.1413 20.2114 21.029C20.3174 20.9167 20.4218 20.7823 20.5277 20.6606C20.6147 20.5545 20.6855 20.4362 20.738 20.3095C20.7657 20.2514 20.7786 20.1874 20.7756 20.1231C20.7725 20.0588 20.7537 19.9963 20.7206 19.941C20.6685 19.8367 20.2462 18.8024 20.0723 18.3818C19.8983 17.9611 19.7291 18.0275 19.5979 18.0196C19.4666 18.0117 19.3353 18.0196 19.1962 18.0196C19.0881 18.0214 18.9816 18.0458 18.8835 18.0913C18.7855 18.1368 18.698 18.2024 18.6269 18.2837C18.391 18.5073 18.204 18.7773 18.0774 19.0766C17.9509 19.376 17.8876 19.6983 17.8915 20.0233C17.8915 21.0575 18.6443 22.0569 18.7502 22.1977C18.8562 22.3384 20.232 24.4606 22.34 25.37C22.7314 25.5388 23.1315 25.6866 23.5387 25.8127C23.9674 25.9429 24.4206 25.9716 24.8623 25.8966C25.2656 25.8365 26.1053 25.3873 26.2856 24.8971C26.4658 24.4069 26.4548 23.991 26.4026 23.904Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="#"
+                                        class="header__navbar-social-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            width="44" height="44"
+                                            viewBox="0 0 44 44" fill="none">
+                                            <rect x="0.5" y="0.5" width="43"
+                                                height="43" rx="21.5"
+                                                stroke="white" />
+                                            <path fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M13.8804 21.7418C18.2423 19.8414 21.1507 18.5883 22.6055 17.9828C26.7609 16.2553 27.6288 15.9553 28.1869 15.9442C28.3939 15.9401 28.5969 16.0011 28.7674 16.1186C28.887 16.2217 28.9633 16.3663 28.9809 16.5232C29.0109 16.7184 29.0194 16.9164 29.006 17.1135C28.7814 19.4856 27.806 25.219 27.3107 27.8688C27.1014 28.9851 26.6883 29.366 26.2879 29.4037C25.42 29.4832 24.753 28.8288 23.9158 28.2776C22.5986 27.4139 21.8548 26.8823 20.5767 26.0339C19.099 25.0572 20.0576 24.5256 20.899 23.6521C21.1195 23.4232 24.9455 19.9404 25.0209 19.6251C25.0308 19.5785 25.0297 19.5303 25.0176 19.4842C25.0054 19.4382 24.9827 19.3956 24.9511 19.36C24.9053 19.3313 24.8535 19.3138 24.7997 19.3087C24.7459 19.3036 24.6917 19.3111 24.6414 19.3307C24.5102 19.3595 22.4069 20.7497 18.3316 23.5014C17.7344 23.9116 17.1934 24.1116 16.7088 24.1014C16.1744 24.0888 15.1474 23.7986 14.3827 23.5432C13.4465 23.239 12.7083 23.0786 12.7669 22.5665C12.8014 22.2986 13.1725 22.0237 13.8804 21.7418Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                    <a href="#"
+                                        class="header__navbar-social-favorite">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            width="44" height="44"
+                                            viewBox="0 0 44 44" fill="none">
+                                            <rect width="44" height="44" rx="22"
+                                                fill="white" />
+                                            <path
+                                                d="M22 29.7501C21.8012 29.7499 21.6105 29.6708 21.47 29.5301L14.7 22.7401C13.7839 21.8054 13.2708 20.5488 13.2708 19.2401C13.2708 17.9313 13.7839 16.6747 14.7 15.7401C15.6283 14.8119 16.8873 14.2904 18.2 14.2904C19.5128 14.2904 20.7717 14.8119 21.7 15.7401L22 16.0001L22.28 15.7201C22.739 15.2561 23.2857 14.888 23.8883 14.6374C24.4909 14.3867 25.1374 14.2584 25.79 14.2601C26.442 14.2571 27.088 14.3838 27.6906 14.6327C28.2931 14.8817 28.8402 15.2479 29.3 15.7101C30.2161 16.6447 30.7293 17.9013 30.7293 19.2101C30.7293 20.5188 30.2161 21.7754 29.3 22.7101L22.53 29.5001C22.463 29.5752 22.3815 29.636 22.2904 29.679C22.1994 29.7219 22.1006 29.7461 22 29.7501ZM18.21 15.7501C17.7559 15.7467 17.3055 15.8334 16.885 16.005C16.4645 16.1767 16.0822 16.4299 15.76 16.7501C15.1109 17.4022 14.7465 18.2849 14.7465 19.2051C14.7465 20.1252 15.1109 21.0079 15.76 21.6601L22 27.9401L28.23 21.6801C28.5526 21.3578 28.8086 20.9751 28.9832 20.5538C29.1578 20.1326 29.2477 19.6811 29.2477 19.2251C29.2477 18.769 29.1578 18.3175 28.9832 17.8963C28.8086 17.475 28.5526 17.0923 28.23 16.7701C27.9104 16.4493 27.5299 16.1956 27.1109 16.0239C26.6919 15.8521 26.2428 15.7659 25.79 15.7701C25.3358 15.7667 24.8855 15.8534 24.465 16.025C24.0445 16.1967 23.6621 16.4499 23.34 16.7701L22.53 17.5801C22.3869 17.7158 22.1972 17.7915 22 17.7915C21.8028 17.7915 21.6131 17.7158 21.47 17.5801L20.66 16.7701C20.3395 16.4463 19.9579 16.1894 19.5374 16.0143C19.1168 15.8392 18.6656 15.7494 18.21 15.7501Z"
+                                                fill="#005AA3" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="header__intro-block header__villages-intro-block">
+                            <div class="header__intro-wrapper">
+                                <div class="header__villages-path">
+                                    <a href="#">Главная</a>
+                                    <a href="#"><img
+                                            src="./assets/img/ico/ellipse.svg"
+                                            alt="ellipse"></a>
+                                    <a href="#">Посёлки</a>
+                                    <a href="#"><img
+                                            src="./assets/img/ico/ellipse.svg"
+                                            alt="ellipse"></a>
+                                    <p>Воскресенское-2</p>
+                                </div>
+                                <div class="header__subtitle">
+                                    <div class="header__subtitle-item">
+                                        <h1>ЖК «Воскресенское-2»</h1>
+                                        <p>Московская область, Богородский
+                                            Городской округ, село
+                                            «Воскресеское»</p>
+                                    </div>
+                                    <div
+                                        class="header__villages-intro-checks header__intro-checks">
+                                        <button><img
+                                                src="./assets/img/ico/gps.svg"
+                                                alt="gps">МО</button>
+                                        <button><img
+                                                src="./assets/img/ico/car.svg"
+                                                alt="car">30 км от МКАД</button>
+                                        <button><img
+                                                src="./assets/img/ico/ellipse.svg"
+                                                alt="ellipse">Щелковское
+                                            шоссе</button>
+                                        <button><img
+                                                src="./assets/img/ico/ellipse.svg"
+                                                alt>Горьковское шоссе</button>
+                                        <button><img
+                                                src="./assets/img/ico/ellipse_blue.svg"
+                                                alt>Свободные участки
+                                            126/421</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="features">
+                <div class="container">
+                    <div class="features__content">
+                        <div class="features__intro title__block">
+                            <h1>Идеально для жизни и отдыха вдали от города</h1>
+                        </div>
+                        <div class="features__card-wrapper">
+                            <div class="building__card">
+                                <div class="building__card-intro">
+                                    <img src="./assets/img/ico/vp_eco_1.svg"
+                                        alt="check">
+                                    <h3>Экология</h3>
+                                </div>
+                                <div class="building__card-subtitle">
+                                    <p>
+                                        ЖК «Воскресенское-2» находится вдали от
+                                        предприятий
+                                        и производств, окруженный густым,
+                                        природным сосновым лесом, неподалеку от
+                                        чистейшего Пашуковского озера.
+                                        ЖК «Воскресенское-2» — это отличное
+                                        решение для тех,
+                                        кто хочет, чтобы близкие имели
+                                        возможность отдыхать
+                                        по-настоящему на свежем воздухе.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="building__card">
+                                <div class="building__card-intro">
+                                    <img src="./assets/img/ico/vp_infra_2.svg"
+                                        alt="check">
+                                    <h3>Инфраструктура</h3>
+                                </div>
+                                <div class="building__card-subtitle">
+                                    <p>
+                                        Мы обладаем достаточным опытом и знаем
+                                        все тонкости в строительстве загородного
+                                        жилья, поэтому будьте уверены ЖК
+                                        «Воскресенское-2» достоин вашего выбора!
+                                        Качество строительства, небольшая
+                                        удаленность от города, доступная
+                                        инфраструктура, прекрасная природа – вот
+                                        неоспоримые преимущества жизни в
+                                        Воскресенское-2.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="building__card">
+                                <div class="building__card-intro">
+                                    <img src="./assets/img/ico/vp_comfort_3.svg"
+                                        alt="check">
+                                    <h3>Комфорт</h3>
+                                </div>
+                                <div class="options__card-title">
+                                    <p>
+                                        К каждому участку подведены:
+                                    </p>
+                                </div>
+                                <div class="options__card-subtitle">
+                                    <div
+                                        class="options__card-subtitle-paragraph">
+                                        <img
+                                            src="./assets/img/ico/check_white.svg"
+                                            alt="check">
+                                        <p>Магистральный газ</p>
+                                    </div>
+                                    <div
+                                        class="options__card-subtitle-paragraph">
+                                        <img
+                                            src="./assets/img/ico/check_white.svg"
+                                            alt="check">
+                                        <p>Электричество</p>
+                                    </div>
+                                    <div
+                                        class="options__card-subtitle-paragraph">
+                                        <img
+                                            src="./assets/img/ico/check_white.svg"
+                                            alt="check">
+                                        <p>Водоснабжение</p>
+                                    </div>
+                                    <div
+                                        class="options__card-subtitle-paragraph">
+                                        <img
+                                            src="./assets/img/ico/check_white.svg"
+                                            alt="check">
+                                        <p>Септик</p>
+                                    </div>
+                                    <p>
+                                        Закрытая территория посёлка обеспечивает
+                                        безопасность для вас и ваших детей.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="building__card">
+                                <div class="building__card-intro">
+                                    <img src="./assets/img/ico/vp_terr_4.svg"
+                                        alt="check">
+                                    <h3>Территория</h3>
+                                </div>
+                                <div class="options__card-title">
+                                    <p>
+                                        На территории поселка:
+                                    </p>
+                                </div>
+                                <div class="options__card-subtitle">
+                                    <div
+                                        class="options__card-subtitle-paragraph">
+                                        <img
+                                            src="./assets/img/ico/check_white.svg"
+                                            alt="check">
+                                        <p>Детская площадка</p>
+                                    </div>
+                                    <div
+                                        class="options__card-subtitle-paragraph">
+                                        <img
+                                            src="./assets/img/ico/check_white.svg"
+                                            alt="check">
+                                        <p>Спортивная площадка с тренажерами</p>
+                                    </div>
+                                    <div
+                                        class="options__card-subtitle-paragraph">
+                                        <img
+                                            src="./assets/img/ico/check_white.svg"
+                                            alt="check">
+                                        <p>Футбольная площадка</p>
+                                    </div>
+                                    <div
+                                        class="options__card-subtitle-paragraph">
+                                        <img
+                                            src="./assets/img/ico/check_white.svg"
+                                            alt="check">
+                                        <p>Баскетбольная площадка</p>
+                                    </div>
+                                    <p>
+                                        В центре посёлка — ухоженный парк с
+                                        водоёмом и территорией для прогулки.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="aerial">
+                <div class="container">
+                    <div class="aerial__content">
+                        <div class="aerial__intro title__block">
+                            <h1>Посмотрите на посёлок
+                                с высоты птичьего полёта</h1>
+                        </div>
+                        <div class="aerial__slider component__vue">
+                            <h3>Тут скоро будет видео проигрыватель на Vue</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="video">
+                <div class="container">
+                    <div class="video__content">
+                        <div class="video__intro title__block">
+                            <h1>Видео-обзоры посёлков</h1>
+                            <div class="video__slider-btn">
+                                <button><img
+                                        src="./assets/img/ico/slider_arrow_left.svg"
+                                        alt="slider_arrow_left"></button>
+                                <button><img
+                                        src="./assets/img/ico/slider_arrow_right.svg"
+                                        alt="slider_arrow_right"></button>
+                            </div>
+                        </div>
+                        <div class="video__slider component__vue">
+                            <h3>Тут скоро будет слайдер на Vue</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="territory territory__vp">
+                <div class="container">
+                    <div class="territory__content">
+                        <div class="territory__intro title__block">
+                            <h1>Обустроенные <br> территории посёлков</h1>
+                        </div>
+                        <div class="territory__cards">
+                            <div class="territory__card-item">
+                                <div class="territory__card-img">
+                                    <img src="./assets/img/area/1.svg" alt="1">
+                                </div>
+                                <div class="territory__card-title">
+                                    <h3>Магистральный газ</h3>
+                                </div>
+                            </div>
+                            <div class="territory__card-item">
+                                <div class="territory__card-img">
+                                    <img src="./assets/img/area/2.svg" alt="2">
+                                </div>
+                                <div class="territory__card-title">
+                                    <h3>Охрана при въезде</h3>
+                                </div>
+                            </div>
+                            <div class="territory__card-item">
+                                <div class="territory__card-img">
+                                    <img src="./assets/img/area/3.svg" alt="3">
+                                </div>
+                                <div class="territory__card-title">
+                                    <h3>Прогулочная зона</h3>
+                                </div>
+                            </div>
+                            <div class="territory__card-item">
+                                <div class="territory__card-img">
+                                    <img src="./assets/img/area/4.svg" alt="4">
+                                </div>
+                                <div class="territory__card-title">
+                                    <h3>Гостевая автостоянка</h3>
+                                </div>
+                            </div>
+                            <div class="territory__card-item">
+                                <div class="territory__card-img">
+                                    <img src="./assets/img/area/5.svg" alt="5">
+                                </div>
+                                <div class="territory__card-title">
+                                    <h3>Центральное водоснабжение</h3>
+                                </div>
+                            </div>
+                            <div class="territory__card-item">
+                                <div class="territory__card-img">
+                                    <img src="./assets/img/area/6.svg" alt="6">
+                                </div>
+                                <div class="territory__card-title">
+                                    <h3>Центральное электроснабжение</h3>
+                                </div>
+                            </div>
+                            <div class="territory__card-item">
+                                <div class="territory__card-img">
+                                    <img src="./assets/img/area/7.svg" alt="7">
+                                </div>
+                                <div class="territory__card-title">
+                                    <h3>Асфальтированные дороги и освещение</h3>
+                                </div>
+                            </div>
+                            <div class="territory__card-item">
+                                <div class="territory__card-img">
+                                    <img src="./assets/img/area/8.svg" alt="8">
+                                </div>
+                                <div class="territory__card-title">
+                                    <h3>Административное здание</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="masterplan">
+                <div class="container">
+                    <div class="masterplan__content">
+                        <div class="masterplan__intro title__block">
+                            <h1>Генплан посёлка</h1>
+                            <div class="masterplan__button-wrapper">
+                                <div class="masterplan__button-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="46" height="46"
+                                        viewBox="0 0 46 46" fill="none">
+                                        <rect x="0.5" y="0.5" width="45"
+                                            height="45" rx="22.5" stroke="white"
+                                            stroke-opacity="0.15" />
+                                        <path
+                                            d="M23 17.1875C22.2954 17.1875 21.6066 17.3964 21.0208 17.7879C20.4349 18.1793 19.9783 18.7357 19.7087 19.3867C19.439 20.0377 19.3685 20.754 19.506 21.445C19.6434 22.1361 19.9827 22.7708 20.4809 23.2691C20.9792 23.7673 21.6139 24.1066 22.305 24.244C22.996 24.3815 23.7123 24.311 24.3633 24.0413C25.0143 23.7717 25.5707 23.3151 25.9621 22.7292C26.3536 22.1434 26.5625 21.4546 26.5625 20.75C26.5625 19.8052 26.1872 18.899 25.5191 18.2309C24.851 17.5628 23.9448 17.1875 23 17.1875ZM23 23.1875C22.5179 23.1875 22.0466 23.0445 21.6458 22.7767C21.245 22.5089 20.9325 22.1282 20.748 21.6828C20.5636 21.2374 20.5153 20.7473 20.6093 20.2745C20.7034 19.8016 20.9355 19.3673 21.2764 19.0264C21.6173 18.6855 22.0516 18.4534 22.5245 18.3593C22.9973 18.2653 23.4874 18.3136 23.9328 18.498C24.3782 18.6825 24.7589 18.995 25.0267 19.3958C25.2945 19.7966 25.4375 20.2679 25.4375 20.75C25.4375 21.3965 25.1807 22.0165 24.7236 22.4736C24.2665 22.9307 23.6465 23.1875 23 23.1875ZM23 12.6875C20.8625 12.69 18.8132 13.5402 17.3017 15.0517C15.7902 16.5632 14.94 18.6125 14.9375 20.75C14.9375 23.6478 16.2819 26.7256 18.8253 29.6506C19.9733 30.9773 21.2653 32.1722 22.6775 33.2131C22.772 33.2793 22.8846 33.3148 23 33.3148C23.1154 33.3148 23.228 33.2793 23.3225 33.2131C24.7347 32.1722 26.0267 30.9773 27.1747 29.6506C29.7181 26.7256 31.0625 23.6506 31.0625 20.75C31.06 18.6125 30.2098 16.5632 28.6983 15.0517C27.1868 13.5402 25.1375 12.69 23 12.6875ZM23 32.0478C21.5938 30.9622 16.0625 26.3394 16.0625 20.75C16.0625 18.9101 16.7934 17.1455 18.0944 15.8444C19.3955 14.5434 21.1601 13.8125 23 13.8125C24.8399 13.8125 26.6045 14.5434 27.9056 15.8444C29.2066 17.1455 29.9375 18.9101 29.9375 20.75C29.9375 26.3394 24.4062 30.9622 23 32.0478Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="masterplan__button-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="46" height="46"
+                                        viewBox="0 0 46 46" fill="none">
+                                        <rect x="0.5" y="0.5" width="45"
+                                            height="45" rx="22.5" stroke="white"
+                                            stroke-opacity="0.15" />
+                                        <g clip-path="url(#clip0_12_7170)">
+                                            <path
+                                                d="M24.9273 31.6271L30.3174 17.5602C30.7495 16.4324 29.7098 15.3927 28.582 15.8249L14.5151 21.2149C13.2406 21.7033 13.1992 23.4904 14.4535 23.8715L19.7897 25.493C20.2047 25.6191 20.5232 25.9375 20.6493 26.3526L22.2707 31.6887C22.6519 32.9431 24.439 32.9016 24.9273 31.6271Z"
+                                                stroke="white" />
+                                        </g>
+                                        <defs>
+                                            <clippath id="clip0_12_7170">
+                                                <rect width="20" height="20"
+                                                    fill="white"
+                                                    transform="translate(10 22) rotate(-45)" />
+                                            </clippath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="masterplan__button-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="46" height="46"
+                                        viewBox="0 0 46 46" fill="none">
+                                        <rect x="0.5" y="0.5" width="45"
+                                            height="45" rx="22.5" stroke="white"
+                                            stroke-opacity="0.15" />
+                                        <g clip-path="url(#clip0_12_7171)">
+                                            <path fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M16.6675 29.999H18.5095C18.7849 29.999 19 30.2229 19 30.499C19 30.7671 18.7804 30.999 18.5095 30.999H15.4905C15.3544 30.999 15.233 30.9443 15.145 30.8557C15.0566 30.7637 15 30.6424 15 30.5085V27.4895C15 27.2141 15.2239 26.999 15.5 26.999C15.7681 26.999 16 27.2186 16 27.4895V29.2523L20.7797 24.4726C20.9752 24.2771 21.285 24.284 21.4802 24.4792C21.6698 24.6688 21.6784 24.9881 21.4868 25.1797L16.6675 29.999ZM29.3301 29.999H27.4882C27.2128 29.999 26.9977 30.2229 26.9977 30.499C26.9977 30.7671 27.2173 30.999 27.4882 30.999H30.5073C30.6434 30.999 30.7648 30.9443 30.8527 30.8557C30.9411 30.7637 30.9977 30.6424 30.9977 30.5085V27.4895C30.9977 27.2141 30.7739 26.999 30.4977 26.999C30.2297 26.999 29.9977 27.2186 29.9977 27.4895V29.2523L25.218 24.4726C25.0225 24.2771 24.7128 24.284 24.5175 24.4792C24.328 24.6688 24.3192 24.9881 24.5109 25.1797L29.3301 29.999ZM16.6675 16H18.5095C18.7849 16 19 15.7761 19 15.5C19 15.2319 18.7804 15 18.5095 15H15.4905C15.3544 15 15.233 15.0547 15.145 15.1433C15.0566 15.2353 15 15.3566 15 15.4905V18.5095C15 18.7849 15.2239 19 15.5 19C15.7681 19 16 18.7804 16 18.5095V16.7466L20.7797 21.5264C20.9752 21.7219 21.285 21.715 21.4802 21.5198C21.6698 21.3302 21.6784 21.0109 21.4868 20.8193L16.6675 16ZM29.251 16H27.4882C27.2128 16 26.9977 15.7761 26.9977 15.5C26.9977 15.2319 27.2173 15 27.4882 15H30.5073C30.6434 15 30.7648 15.0547 30.8527 15.1433C30.9411 15.2353 30.9977 15.3566 30.9977 15.4905V18.5095C30.9977 18.7849 30.7739 19 30.4977 19C30.2297 19 29.9977 18.7804 29.9977 18.5095V16.6676L25.1785 21.4868C24.983 21.6823 24.6732 21.6755 24.478 21.4802C24.2884 21.2907 24.2797 20.9713 24.4713 20.7797L29.251 16Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clippath id="clip0_12_7171">
+                                                <rect width="16" height="16"
+                                                    fill="white"
+                                                    transform="translate(15 15)" />
+                                            </clippath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="masterplan__component">
+                            <div class="component__vue">
+                                <h3>Тут скоро будет Генплан проекта на Vue</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="photogallery">
+                <div class="container">
+                    <div class="photogallery__content">
+                        <div class="photogallery__intro title__block">
+                            <h1>Фотогалерея</h1>
+                        </div>
+                        <div class="photogallery__slider component__vue">
+                            <h3>Тут скоро будет Фотогалерея на Vue</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="collection">
+                <div class="container">
+                    <div class="collection__content">
+                        <div class="collection__intro title__block">
+                            <h1>Коттеджи</h1>
+                        </div>
+                        <div class="collection__slider component__vue">
+                            <h3>Тут скоро будет Коттеджи на Vue</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="nearbyvillages">
+                <div class="container">
+                    <div class="nearbyvillages__content">
+                        <div class="nearbyvillages__intro title__block">
+                            <h1>Другие посёлки</h1>
+                        </div>
+                        <div class="nearbyvillages__slider component__vue">
+                            <h3>Тут скоро будет другие поселки на Vue</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="directions">
+                <div class="container">
+                    <div class="directions__content">
+                        <div class="directions__intro">
+                            <div class="directions__intro-item title__block">
+                                <h1>Как добраться?</h1>
+                            </div>
+                            <div class="directions__table">
+                                <div
+                                    class="directions__table-item directions__left-table-item">
+                                    <h3>10 мин.</h3>
+                                    <p>на авто от г. Ногинск</p>
+                                </div>
+                                <div class="directions__table-item">
+                                    <h3>20 мин.</h3>
+                                    <p>на авто от г. Щёлково</p>
+                                </div>
+                                <div
+                                    class="directions__table-item directions__right-table-item">
+                                    <h3>40 мин.</h3>
+                                    <p>на авто от МКАД</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="directions__cards">
+                            <div class="building__card">
+                                <div class="building__card-intro">
+                                    <img src="./assets/img/ico/pt.svg"
+                                        alt="transport">
+                                    <h3>На общественном транспорте</h3>
+                                </div>
+                                <div class="building__card-subtitle">
+                                    <p>
+                                        Из Москвы от станции метро Щелковская
+                                        можно с комфортом добраться до ЖК на
+                                        автобусе №321 или 320 до остановки
+                                        Громково, далее на автобусе №22 до
+                                        остановки "По требованию". Из Ногинска
+                                        на автобусе №22 до остановки
+                                        "Воскресенское-2".
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="building__card">
+                                <div class="building__card-intro">
+                                    <img src="./assets/img/ico/ot.svg"
+                                        alt="transport">
+                                    <h3>На собственном транспорте</h3>
+                                </div>
+                                <div class="building__card-subtitle">
+                                    <p>
+                                        От Москвы следовать 29 км по Щелковскому
+                                        шоссе, далее поворот направо на
+                                        Николо-Берлюковский монастырь, 2 км до
+                                        поворота на Ногинск и Ямкино, 2 км до
+                                        въезда в коттеджный поселок.
+                                    </p>
+                                    <p>
+                                        По Горьковскому шоссе от МКАД следовать
+                                        24 км, далее поворот налево на Монино, 5
+                                        км до Скорбященской церкви, поворот
+                                        направо и 5 км до деревни Кабаново,
+                                        затем поворот налево, 5 км до деревни
+                                        Авдотьино, поворот направо 2 км до
+                                        въезда в "Воскресенское-2"
+                                    </p>
+                                </div>
+                            </div>
+                            <button class="main__btn"
+                                type="submit">Построить маршрут<img
+                                    src="./assets/img/ico/arrow_right.svg"
+                                    alt="arrow_right"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="infrastructure">
+                <div class="container">
+                    <div class="infrastructure__content">
+                        <div class="infrastructure__intro title__block">
+                            <h1>Инфраструктура и окружение</h1>
+                        </div>
+                        <div class="infrastructure__map">
+                            <div class="component__vue">
+                                <h3>Тут скоро будет карта инфраструктуры на Vue</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="container">
+                    <div class="reviews__content">
+                        <div class="reviews__intro title__block">
+                            <h1>Отзывы жильцов</h1>
+                            <div class="reviews__slider-btn">
+                                <button><img
+                                        src="./assets/img/ico/slider_arrow_left.svg"
+                                        alt="slider_arrow_left"></button>
+                                <button><img
+                                        src="./assets/img/ico/slider_arrow_right.svg"
+                                        alt="slider_arrow_right"></button>
+                            </div>
+                        </div>
+                        <div class="reviews__slider component__vue">
+                            <h3>Тут скоро будет слайдер на Vue</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="map">
+                <div class="container">
+                    <div class="map__content">
+                        <div class="map__slider component__vue">
+                            <h2>Тут скоро будет карты на Vue</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="excursion">
+                <div class="container">
+                    <div class="excursion__content">
+                        <div class="excursion__intro">
+                            <h1><span>Приезжайте на экскурсию <br></span> по
+                                нашим посёлкам</h1>
+                        </div>
+                        <div class="excursion__form-wrapper">
+                            <div class="excursion__subtitle">
+                                <p>Экскурсия по коттеджному поселку – это
+                                    отличный способ узнать о возможностях
+                                    проживания в будущем доме или даче,
+                                    познакомиться с инфраструктурой и
+                                    особенностями местности, а также
+                                    почувствовать единство с природой.</p>
+                                <hr>
+                                <div class="excursion__social">
+                                    <div class="excursion__social-wrapper">
+                                        <a href="#"><img
+                                                src="./assets/img/ico/whatsapp_white.svg"
+                                                alt="whatsapp_white"></a>
+                                        <a href="#"><img
+                                                src="./assets/img/ico/tg_white.svg"
+                                                alt="tg_white"></a>
+                                    </div>
+                                    <div class="excursion__social-tel">
+                                        <a href="tel:+7 (495) 797-70-71">+7
+                                            (495) 797-70-71</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form excursion__form">
+                                <form action="#">
+                                    <input type="text" placeholder="Имя"
+                                        class="form__form-input">
+                                    <input type="tel" placeholder="Телефон"
+                                        class="form__form-input">
+                                    <div class="form__form-polit">
+                                        <label for="excursion-checkbox"
+                                            class="checkbox-label">
+                                            <input type="checkbox"
+                                                id="excursion-checkbox"
+                                                class="checkbox">
+                                            <span class="checkbox-view">
+                                                <svg class="checkbox-icon"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="18"
+                                                    viewBox="0 0 511.985 511.985">
+                                                    <path fill="#fff"
+                                                        d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"></path>
+                                                </svg>
+                                            </span>
+                                            Согласен (-на) с <a href="#">
+                                                политикой конфиденциальности</a>
+                                        </label>
+                                    </div>
+                                    <button class="main__btn"
+                                        type="submit">Записаться на экскурсию
+                                        <img
+                                            src="./assets/img/ico/arrow_right.svg"
+                                            alt="arrow_right"></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="news">
+                <div class="container">
+                    <div class="news__content">
+                        <div class="news__intro title__block">
+                            <h1>Последние новости</h1>
+                            <div class="news__slider-btn">
+                                <button><img
+                                        src="./assets/img/ico/slider_arrow_left.svg"
+                                        alt="slider_arrow_left"></button>
+                                <button><img
+                                        src="./assets/img/ico/slider_arrow_right.svg"
+                                        alt="slider_arrow_right"></button>
+                            </div>
+                        </div>
+                        <div class="news__slider component__vue">
+                            <h3>Тут скоро будет слайдер на Vue</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts__content">
+                        <div class="contacts__intro title__block">
+                            <h1>Наши контакты</h1>
+                        </div>
+                        <div class="contacts__wrapper-card">
+                            <div class="contacts__wrapper-card-item">
+                                <div class="contacts__wrapper-card-head">
+                                    <div class="contacts__card-item">
+                                        <div class="contacts__card-item-btn">
+                                            <img
+                                                src="./assets/img/ico/phone_small.svg"
+                                                alt="phone">
+                                            <h4>Телефон</h4>
+                                        </div>
+                                        <div class="contacts__card-item-intro">
+                                            <a href="tel:+7 (495) 797-70-71">+7
+                                                (495) 797-70-71</a>
+                                            <p>Ежедневно с 10 до 19</p>
+                                        </div>
+                                    </div>
+                                    <div class="contacts__card-item">
+                                        <div class="contacts__card-item-btn">
+                                            <img
+                                                src="./assets/img/ico/email_small.svg"
+                                                alt="phone">
+                                            <h4>E-mail</h4>
+                                        </div>
+                                        <div class="contacts__card-item-intro">
+                                            <a
+                                                href="mailto:info@cottage-poselki.com">info@cottage-poselki.com</a>
+                                            <p>По всем вопросам</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contacts__wrapper-card-body">
+                                    <div
+                                        class="contacts__card-item contacts__card-item-body">
+                                        <div class="contacts__card-item-btn">
+                                            <img
+                                                src="./assets/img/ico/network_small.svg"
+                                                alt="phone">
+                                            <h4>Соц.сети</h4>
+                                        </div>
+                                        <p>Следите за нами в социальных
+                                            сетях</p>
+                                        <div class="contacts__card-social">
+                                            <a href="#"><img
+                                                    src="./assets/img/ico/whatsapp_gray.svg"
+                                                    alt="whatsapp_white"></a>
+                                            <a href="#"><img
+                                                    src="./assets/img/ico/tg_gray.svg"
+                                                    alt="tg_white"></a>
+                                            <a href="#"><img
+                                                    src="./assets/img/ico/vk_gray.svg"
+                                                    alt="vk_white"></a>
+                                            <a href="#"><img
+                                                    src="./assets/img/ico/youtube_gray.svg"
+                                                    alt="youtube_white"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts__wrapper-address">
+                                <div class="contacts__address-item">
+                                    <div class="contacts__card-item-btn">
+                                        <img
+                                            src="./assets/img/ico/adress_small.svg"
+                                            alt="adress">
+                                        <h4>Адрес</h4>
+                                    </div>
+                                    <div class="contacts__address-title">
+                                        <h2>
+                                            Московская область, Щелковское
+                                            шоссе, Горьковское шоссе, 30 км от
+                                            МКАД
+                                        </h2>
+                                    </div>
+                                    <div class="contacts__address-link">
+                                        <img
+                                            src="./assets/img/ico/car_small_gray.svg"
+                                            alt="car_small_gray">
+                                        <a href="#">Построить маршрут</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="footer">
+                <div class="container">
+                    <div class="footer__content">
+                        <div class="footer__head">
+                            <div class="footer__block">
+                                <div class="footer__logo">
+                                    <a href="./index.html"><img
+                                            src="./assets/img/logo_big.svg"
+                                            alt="logo"></a>
+                                    <p>
+                                        © 2007 – 2024 COTTAGE POSELKI
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="footer__block footer__menu">
+                                <p>Навигация</p>
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">Главная</a></li>
+                                        <li><a href="#">Коттеджи</a></li>
+                                        <li><a href="#">Генплан</a></li>
+                                        <li><a href="#">Видео-обзоры</a></li>
+                                        <li><a href="#">Отзывы</a></li>
+                                        <li><a href="#">Контакты</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="footer__block footer__menu">
+                                <p>Посёлки</p>
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">Новое
+                                                Воскресенское</a></li>
+                                        <li><a href="#">Воскресенское-2</a></li>
+                                        <li><a href="#">Воскресенское</a></li>
+                                        <li><a href="#">Буковая аллея</a></li>
+                                        <li><a href="#">Полесье</a></li>
+                                        <li><a href="#">Родинки</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="footer__body">
+                            <div class="footer__block">
+                                <p>Информация на сайте не является публичной
+                                    офертой</p>
+                            </div>
+                            <div class="footer__block footer__link">
+                                <a href="#">Построить маршрут</a>
+                            </div>
+                            <div class="footer__block footer__link">
+                                <a href="#">Политика конфиденциальности</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</html>

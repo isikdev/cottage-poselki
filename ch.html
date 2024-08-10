@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cottage Poselki - Страница Дома</title>
+        <title>Cottage Poselki - Каталог домов</title>
         <link rel="stylesheet" href="./assets/scss/main.css">
     </head>
     <body>
         <header>
-            <section class="header header__pay">
+            <section class="header__ch header">
                 <div class="container">
                     <div class="header__content">
                         <div class="header__navbar">
@@ -23,9 +23,11 @@
                                         <ul>
                                             <li><a href="#">Поселки</a></li>
                                             <li><a href="#">Коттеджи</a></li>
-                                            <li><a href="#">Генплан</a></li>
+                                            <li><a
+                                                    href="./mp.html">Генплан</a></li>
                                             <li><a href="#">Сервис</a></li>
-                                            <li><a href="#">Контакты</a></li>
+                                            <li><a
+                                                    href="./contacts.html">Контакты</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -81,17 +83,41 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="header__pay-wrapper">
-                            <div class="header__pay-path">
-                                <a href="#">Главная</a>
-                                <a href="#"><img
-                                        src="./assets/img/ico/ellipse.svg"
-                                        alt="ellipse"></a>
-                                <a href="#">Коттеджи</a>
-                                <a href="#"><img
-                                        src="./assets/img/ico/ellipse.svg"
-                                        alt="ellipse"></a>
-                                <p>Кингстон</p>
+                        <div
+                            class="header__intro-block header__villages-intro-block">
+                            <div class="header__intro-wrapper">
+                                <div class="header__villages-path">
+                                    <a href="#">Главная</a>
+                                    <a href="#"><img
+                                            src="./assets/img/ico/ellipse.svg"
+                                            alt="ellipse"></a>
+                                    <p>Коттеджи</p>
+                                </div>
+                                <div class="header__subtitle">
+                                    <div class="header__subtitle-item">
+                                        <h1>Наши коттеджи</h1>
+                                        <p>Жилые готовые дома и проекты домов,
+                                            выдержаные в едином архитектурном
+                                            стиле</p>
+                                    </div>
+                                    <div
+                                        class="header__villages-intro-checks header__intro-checks">
+                                        <button><img
+                                                src="./assets/img/ico/gps.svg"
+                                                alt="gps">МО</button>
+                                        <button><img
+                                                src="./assets/img/ico/ellipse_blue.svg"
+                                                alt="ellipse">Богородский
+                                            городской округ</button>
+                                        <button><img
+                                                src="./assets/img/ico/ellipse.svg"
+                                                alt="ellipse">Щелковское
+                                            шоссе</button>
+                                        <button><img
+                                                src="./assets/img/ico/ellipse.svg"
+                                                alt>Горьковское шоссе</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -99,168 +125,337 @@
             </section>
         </header>
         <main>
-            <section class="project">
+            <section class="collection collection__cataloghome">
                 <div class="container">
-                    <div class="project__content">
-                        <div class="project__slider component__vue">
-                            <h3>Тут скоро будет проект дома на Vue</h3>
+                    <div class="collection__content">
+                        <div class="collection__slider component__vue">
+                            <h3>Тут скоро будет Коттеджи на Vue</h3>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="home">
+            <section class="progress">
                 <div class="container">
-                    <div class="home__content">
-                        <div class="home__intro title__block">
-                            <h1>Особенности дома</h1>
+                    <div class="progress__content">
+                        <div class="progress__intro title__block">
+                            <h1>Этапы строительства дома</h1>
                         </div>
-                        <div class="home__cards">
-                            <div class="home__card-item">
-                                <div class="home__card-intro">
-                                    <h3>Подведённые коммуникации</h3>
-                                    <p>
-                                        Газ, вода, электричество — всё проложено
-                                        под землей, что не портит общий вид
-                                    </p>
-                                </div>
-                                <img src="./assets/img/ico/home_blue_1.svg"
-                                    alt="1">
-                            </div>
-                            <div class="home__card-item">
-                                <div class="home__card-intro">
-                                    <h3>Развитая<br> инфраструктура</h3>
-                                    <p>
-                                        Магазин, спортивные зоны, детские
-                                        площадки, студии для творчества, пляж
-                                    </p>
-                                </div>
-                                <img src="./assets/img/ico/home_blue_2.svg"
-                                    alt="2">
-                            </div>
-                            <div class="home__card-item">
-                                <div class="home__card-intro">
-                                    <h3>Забота о вашей безопасности</h3>
-                                    <p>
-                                        Въезд только через КПП, 24/7 охрана с
-                                        видеонаблюдением и патрулированием
-                                    </p>
-                                </div>
-                                <img src="./assets/img/ico/home_blue_3.svg"
-                                    alt="3">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="video">
-                <div class="container">
-                    <div class="video__content">
-                        <div class="video__intro title__block">
-                            <h1>Видео-обзоры посёлков</h1>
-                            <div class="video__slider-btn">
-                                <button><img
-                                        src="./assets/img/ico/slider_arrow_left.svg"
-                                        alt="slider_arrow_left"></button>
-                                <button><img
-                                        src="./assets/img/ico/slider_arrow_right.svg"
-                                        alt="slider_arrow_right"></button>
-                            </div>
-                        </div>
-                        <div class="video__slider component__vue">
-                            <h3>Тут скоро будет слайдер на Vue</h3>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="info">
-                <div class="container">
-                    <div class="info__content">
-                        <div class="info__title title__block">
-                            <h1>Что входит в отделку</h1>
-                        </div>
-                        <div class="info__wrapper">
-                            <div class="info__slider-wrapper">
-                                <div class="info__slider component__vue">
-                                    <h3>Тут скоро будет слайдер на Vue</h3>
-                                </div>
-                            </div>
-                            <div class="info__parametrs">
-                                <div class="info__head">
-                                    <div class="info__parametr-card">
+                        <div class="progress__wrapper">
+                            <div class="progress__card">
+                                <div class="progress__head">
+                                    <div class="progress__head-ico">
                                         <img
-                                            src="./assets/img/ico/parametrs/1.svg"
+                                            src="./assets/img/ico/progress/1.svg"
                                             alt="1">
-                                        <p>
-                                            2 санузла — отделка керамической
-                                            плиткой,
-                                            с установкой ванной, душевой кабины,
-                                            унитазов, раковин, смесителей и
-                                            полотенцесушителей
-                                        </p>
+                                    </div>
+                                    <div class="progress__head-scale">
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
                                     </div>
                                 </div>
-                                <div class="info__body">
-                                    <div class="info__parametr-card">
+                                <div class="progress__body">
+                                    <h3>
+                                        Разработка проекта
+                                    </h3>
+                                    <p>
+                                        Этот этап включает в себя определение
+                                        основных параметров будущего дома, таких
+                                        как количество комнат, планировка, выбор
+                                        материалов для строительства и отделки.
+                                        Также на этом этапе происходит
+                                        согласование всех деталей с заказчиком.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="progress__card">
+                                <div class="progress__head">
+                                    <div class="progress__head-ico">
                                         <img
-                                            src="./assets/img/ico/parametrs/2.svg"
+                                            src="./assets/img/ico/progress/2.svg"
                                             alt="2">
-                                        <p>
-                                            Система
-                                            отопления
-                                        </p>
                                     </div>
-                                    <div class="info__parametr-card">
-                                        <img
-                                            src="./assets/img/ico/parametrs/3.svg"
-                                            alt="3">
-                                        <p>
-                                            Двери
-                                            межкомнатные
-                                        </p>
-                                    </div>
-                                    <div class="info__parametr-card">
-                                        <img
-                                            src="./assets/img/ico/parametrs/4.svg"
-                                            alt="4">
-                                        <p>
-                                            Виниловые
-                                            обои
-                                        </p>
-                                    </div>
-                                    <div class="info__parametr-card">
-                                        <img
-                                            src="./assets/img/ico/parametrs/5.svg"
-                                            alt="5">
-                                        <p>
-                                            Натяжные
-                                            потолки
-                                        </p>
-                                    </div>
-                                    <div class="info__parametr-card">
-                                        <img
-                                            src="./assets/img/ico/parametrs/6.svg"
-                                            alt="6">
-                                        <p>
-                                            Входная
-                                            металлическая
-                                            дверь
-                                        </p>
-                                    </div>
-                                    <div class="info__parametr-card">
-                                        <img
-                                            src="./assets/img/ico/parametrs/7.svg"
-                                            alt="7">
-                                        <p>
-                                            Разводка
-                                            по электрике
-                                            с устройствами
-                                        </p>
+                                    <div class="progress__head-scale">
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
                                     </div>
                                 </div>
-                                <button class="main__btn"
-                                    type="submit">Подробнее<img
-                                        src="./assets/img/ico/arrow_right.svg"
-                                        alt="arrow_right"></button>
+                                <div class="progress__body">
+                                    <h3>
+                                        Подготовка участка
+                                    </h3>
+                                    <p>
+                                        Перед началом строительства необходимо
+                                        провести подготовительные работы на
+                                        участке: очистить его от мусора и
+                                        растительности, выровнять поверхность
+                                        земли.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="progress__card">
+                                <div class="progress__head">
+                                    <div class="progress__head-ico">
+                                        <img
+                                            src="./assets/img/ico/progress/3.svg"
+                                            alt="3">
+                                    </div>
+                                    <div class="progress__head-scale">
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
+                                    </div>
+                                </div>
+                                <div class="progress__body">
+                                    <h3>
+                                        Заливка фундамента
+                                    </h3>
+                                    <p>
+                                        Фундамент является основой любого
+                                        здания, поэтому его заливке уделяют
+                                        особое внимание. В зависимости от типа
+                                        грунта и размеров дома выбирается
+                                        соответствующий вид фундамента
+                                        (ленточный, столбчатый или плитный).
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="progress__card">
+                                <div class="progress__head">
+                                    <div class="progress__head-ico">
+                                        <img
+                                            src="./assets/img/ico/progress/4.svg"
+                                            alt="4">
+                                    </div>
+                                    <div class="progress__head-scale">
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
+                                    </div>
+                                </div>
+                                <div class="progress__body">
+                                    <h3>
+                                        Возведение стен
+                                    </h3>
+                                    <p>
+                                        После того как фундамент готов,
+                                        начинается строительство стен и
+                                        перегородок из выбранного материала
+                                        (кирпич, блоки или дерево).
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="progress__card">
+                                <div class="progress__head">
+                                    <div class="progress__head-ico">
+                                        <img
+                                            src="./assets/img/ico/progress/5.svg"
+                                            alt="5">
+                                    </div>
+                                    <div class="progress__head-scale">
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
+                                        <div class="progress__scale-item"></div>
+                                    </div>
+                                </div>
+                                <div class="progress__body">
+                                    <h3>
+                                        Установка крыши
+                                    </h3>
+                                    <p>
+                                        Крыша защищает дом от осадков и
+                                        солнечного излучения, поэтому ее монтаж
+                                        является одним из самых ответственных
+                                        этапов строительства.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="progress__card">
+                                <div class="progress__head">
+                                    <div class="progress__head-ico">
+                                        <img
+                                            src="./assets/img/ico/progress/6.svg"
+                                            alt="6">
+                                    </div>
+                                    <div class="progress__head-scale">
+                                    </div>
+                                </div>
+                                <div class="progress__body">
+                                    <h3>
+                                        Окна и двери
+                                    </h3>
+                                    <p>
+                                        Установка окон и дверей производится
+                                        после завершения работ по возведению
+                                        стен и крыши.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="progress__card">
+                                <div class="progress__head">
+                                    <div class="progress__head-ico">
+                                        <img
+                                            src="./assets/img/ico/progress/7.svg"
+                                            alt="7">
+                                    </div>
+                                    <div class="progress__head-scale">
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div class="progress__scale-item"></div>
+                                    </div>
+                                </div>
+                                <div class="progress__body">
+                                    <h3>
+                                        Отделка помещений
+                                    </h3>
+                                    <p>
+                                        Это заключительный этап строительства,
+                                        который включает в себя отделку
+                                        потолков, стен и пола, установку
+                                        сантехники и электрооборудования.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="progress__card">
+                                <div class="progress__head">
+                                    <div class="progress__head-ico">
+                                        <img
+                                            src="./assets/img/ico/progress/8.svg"
+                                            alt="8">
+                                    </div>
+                                    <div class="progress__head-scale">
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                        <div
+                                            class="progress__scale-item progress__scale-full"></div>
+                                    </div>
+                                </div>
+                                <div class="progress__body">
+                                    <h3>
+                                        Сдача объекта заказчику
+                                    </h3>
+                                    <p>
+                                        После окончания всех работ по
+                                        строительству дома под ключ он сдаётся
+                                        заказчику для проживания или
+                                        использования по назначению.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cataloghome__form">
+                <div class="container">
+                    <div class="cataloghome__form-content">
+                        <div class="cataloghome__form-intro">
+                            <h1>
+                                Построим дом по вашему индивидуальному проекту
+                            </h1>
+                            <p>
+                                Отправьте ваш проект используя контактную форму.
+                                Наш менеджер свяжется с вами, чтобы согласовать
+                                все детали.
+                            </p>
+                        </div>
+                        <div class="cataloghome__form-wrapper">
+                            <div class="form excursion__form">
+                                <form action="#">
+                                    <input type="text" placeholder="Имя"
+                                        class="form__form-input">
+                                    <input type="tel" placeholder="Телефон"
+                                        class="form__form-input">
+                                    <div class="form__form-polit">
+                                        <label for="excursion-checkbox"
+                                            class="checkbox-label">
+                                            <input type="checkbox"
+                                                id="excursion-checkbox"
+                                                class="checkbox">
+                                            <span class="checkbox-view">
+                                                <svg class="checkbox-icon"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="18"
+                                                    viewBox="0 0 511.985 511.985">
+                                                    <path fill="#fff"
+                                                        d="M500.088 83.681c-15.841-15.862-41.564-15.852-57.426 0L184.205 342.148 69.332 227.276c-15.862-15.862-41.574-15.862-57.436 0-15.862 15.862-15.862 41.574 0 57.436l143.585 143.585c7.926 7.926 18.319 11.899 28.713 11.899 10.394 0 20.797-3.963 28.723-11.899l287.171-287.181c15.862-15.851 15.862-41.574 0-57.435z"></path>
+                                                </svg>
+                                            </span>
+                                            Согласен (-на) с <a href="#">
+                                                политикой конфиденциальности</a>
+                                        </label>
+                                    </div>
+                                    <button class="main__btn"
+                                        type="submit">Отправить проект
+                                        <img
+                                            src="./assets/img/ico/arrow_right.svg"
+                                            alt="arrow_right"></button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -278,8 +473,7 @@
                             </div>
                             <div class="building__card">
                                 <div class="building__card-intro">
-                                    <img src="./assets/img/ico/check_black.svg"
-                                        alt="check">
+                                    <img src="./assets/img/ico/check_black.svg" alt="check">
                                     <h3>Остекление</h3>
                                 </div>
                                 <div class="building__card-subtitle">
@@ -296,8 +490,7 @@
                             </div>
                             <div class="building__card">
                                 <div class="building__card-intro">
-                                    <img src="./assets/img/ico/check_black.svg"
-                                        alt="check">
+                                    <img src="./assets/img/ico/check_black.svg" alt="check">
                                     <h3>Кровля</h3>
                                 </div>
                                 <div class="building__card-subtitle">
@@ -317,8 +510,7 @@
                         <div class="building__right-content">
                             <div class="building__card">
                                 <div class="building__card-intro">
-                                    <img src="./assets/img/ico/check_black.svg"
-                                        alt="check">
+                                    <img src="./assets/img/ico/check_black.svg" alt="check">
                                     <h3>Стены</h3>
                                 </div>
                                 <div class="building__card-subtitle">
@@ -333,8 +525,7 @@
                             </div>
                             <div class="building__card">
                                 <div class="building__card-intro">
-                                    <img src="./assets/img/ico/check_black.svg"
-                                        alt="check">
+                                    <img src="./assets/img/ico/check_black.svg" alt="check">
                                     <h3>Фундамент</h3>
                                 </div>
                                 <div class="building__card-subtitle">
@@ -351,8 +542,7 @@
                             </div>
                             <div class="building__card">
                                 <div class="building__card-intro">
-                                    <img src="./assets/img/ico/check_black.svg"
-                                        alt="check">
+                                    <img src="./assets/img/ico/check_black.svg" alt="check">
                                     <h3>Фасады</h3>
                                 </div>
                                 <div class="building__card-subtitle">
@@ -379,8 +569,7 @@
                         <div class="communaction__cards-wrapper">
                             <div class="communaction__card-item">
                                 <div class="communaction__card-intro">
-                                    <img src="./assets/img/ico/gas_white.svg"
-                                        alt="gas_white">
+                                    <img src="./assets/img/ico/gas_white.svg" alt="gas_white">
                                     <h3>Магистральный газ</h3>
                                 </div>
                                 <div class="communaction__card-subtitle">
@@ -391,9 +580,7 @@
                             </div>
                             <div class="communaction__card-item">
                                 <div class="communaction__card-intro">
-                                    <img
-                                        src="./assets/img/ico/electricity_white.svg"
-                                        alt="electricity_white">
+                                    <img src="./assets/img/ico/electricity_white.svg" alt="electricity_white">
                                     <h3>Электричество 10 КВТ</h3>
                                 </div>
                                 <div class="communaction__card-subtitle">
@@ -405,8 +592,7 @@
                             </div>
                             <div class="communaction__card-item">
                                 <div class="communaction__card-intro">
-                                    <img src="./assets/img/ico/water_white.svg"
-                                        alt="water_white">
+                                    <img src="./assets/img/ico/water_white.svg" alt="water_white">
                                     <h3>Центральное водоснабжение</h3>
                                 </div>
                                 <div class="communaction__card-subtitle">
@@ -416,6 +602,34 @@
                                     </p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="video video__cataloghome">
+                <div class="container">
+                    <div class="video__content">
+                        <div class="video__intro title__block">
+                            <h1>Видео-обзоры посёлков</h1>
+                            <div class="video__slider-btn">
+                                <button><img src="./assets/img/ico/slider_arrow_left.svg" alt="slider_arrow_left"></button>
+                                <button><img src="./assets/img/ico/slider_arrow_right.svg" alt="slider_arrow_right"></button>
+                            </div>
+                        </div>
+                        <div class="video__slider component__vue">
+                            <h3>Тут скоро будет слайдер на Vue</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="settlements">
+                <div class="container">
+                    <div class="senttelments__container">
+                        <div class="senttelments__intro title__block">
+                            <h1>Коттеджные посёлки</h1>
+                        </div>
+                        <div class="senttelments__slider component__vue">
+                            <h3>Тут скоро будет слайдер на Vue</h3>
                         </div>
                     </div>
                 </div>
@@ -445,27 +659,18 @@
                                         Вы можете воспользоваться беспроцентной
                                         рассрочкой на период от 3 до 12 месяцев:
                                     </p>
-                                    <div
-                                        class="options__card-subtitle-paragraph">
-                                        <img
-                                            src="./assets/img/ico/check_white.svg"
-                                            alt="check">
+                                    <div class="options__card-subtitle-paragraph">
+                                        <img src="./assets/img/ico/check_white.svg" alt="check">
                                         <p>Рассрочка на участки без подряда ―
                                             3-6 мес.</p>
                                     </div>
-                                    <div
-                                        class="options__card-subtitle-paragraph">
-                                        <img
-                                            src="./assets/img/ico/check_white.svg"
-                                            alt="check">
+                                    <div class="options__card-subtitle-paragraph">
+                                        <img src="./assets/img/ico/check_white.svg" alt="check">
                                         <p>Рассрочка на готовые дома ― 3-6
                                             мес.</p>
                                     </div>
-                                    <div
-                                        class="options__card-subtitle-paragraph">
-                                        <img
-                                            src="./assets/img/ico/check_white.svg"
-                                            alt="check">
+                                    <div class="options__card-subtitle-paragraph">
+                                        <img src="./assets/img/ico/check_white.svg" alt="check">
                                         <p>Рассрочка на строительство дома ―
                                             6-12 мес.</p>
                                     </div>
@@ -532,30 +737,14 @@
                     </div>
                 </div>
             </section>
-            <section class="cottages__hp-wrapper">
-                <div class="container">
-                    <div class="cottages__content">
-                        <div class="cottages__intro title__block cottages__hp">
-                            <h1>Коттеджи</h1>
-                        </div>
-                        <div class="cottages__slider component__vue">
-                            <h3>Тут скоро будет слайдер на Vue</h3>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <section class="reviews">
                 <div class="container">
                     <div class="reviews__content">
                         <div class="reviews__intro title__block">
                             <h1>Отзывы жильцов</h1>
                             <div class="reviews__slider-btn">
-                                <button><img
-                                        src="./assets/img/ico/slider_arrow_left.svg"
-                                        alt="slider_arrow_left"></button>
-                                <button><img
-                                        src="./assets/img/ico/slider_arrow_right.svg"
-                                        alt="slider_arrow_right"></button>
+                                <button><img src="./assets/img/ico/slider_arrow_left.svg" alt="slider_arrow_left"></button>
+                                <button><img src="./assets/img/ico/slider_arrow_right.svg" alt="slider_arrow_right"></button>
                             </div>
                         </div>
                         <div class="reviews__slider component__vue">
