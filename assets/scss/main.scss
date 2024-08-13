@@ -1068,6 +1068,27 @@
         border-bottom: 1px solid $white4;
         padding-bottom: 20px;
     }
+    &__card-mb {
+        .payment__img {
+            img {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+    &__title {
+        background-color: $blue3;
+        padding: 30px;
+        border-radius: 12px;
+        margin-top: -50px;
+        z-index: 10000;
+        position: relative;
+    }
+    &__mb {
+        padding: 8% 0;
+        margin: 50px 0;
+        display: none;
+    }
 }
 .poselki {
     background-color: $white;
@@ -1633,7 +1654,7 @@
         margin: 0 auto;
         padding: 40px 0px;
         -ms-overflow-style: none;
-        scrollbar-width: none; 
+        scrollbar-width: none;
         scroll-behavior: smooth;
         transition: transform 0.3s ease-in-out;
     }
@@ -1650,9 +1671,9 @@
         text-align: left;
         transition:
             transform 0.3s ease,
-            box-shadow 0.3s ease; 
+            box-shadow 0.3s ease;
         &:hover {
-            transform: translateY(-10px); 
+            transform: translateY(-10px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
     }
@@ -1683,7 +1704,7 @@
             font-weight: 500;
             transition: color 0.3s ease;
             &:hover {
-                color: darken($blue, 10%); 
+                color: darken($blue, 10%);
             }
         }
         p {
@@ -1694,7 +1715,7 @@
             white-space: normal;
             word-wrap: break-word;
             opacity: 0.8;
-            transition: opacity 0.3s ease; 
+            transition: opacity 0.3s ease;
             &:hover {
                 opacity: 1;
             }
@@ -1743,4 +1764,300 @@
     border-top-right-radius: 30px;
     margin-top: -20px;
     padding: 8% 0;
+}
+.footer__mb {
+    display: none;
+}
+@media screen and (max-width: 1244px) {
+    .container {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .contacts__wrapper-card-item {
+        max-width: 100%;
+    }
+    .contacts__wrapper-card {
+        flex-wrap: wrap;
+        max-height: 100%;
+    }
+    .contacts__wrapper-address {
+        max-width: 100%;
+    }
+    .life__content {
+        flex-wrap: wrap;
+    }
+    .life__cards-wrapper {
+        max-width: 100%;
+    }
+    .life__card-img {
+        max-width: 100%;
+        width: 100%;
+        img {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    .feedback__content {
+        max-width: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .feedback__intro {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .feedback__bank-wrapper {
+        max-width: 100%;
+    }
+    .form {
+        min-width: 100%;
+        background-color: transparent;
+        padding: unset;
+    }
+    .conditions {
+        background-size: cover;
+        &__wrapper {
+            gap: 50px;
+        }
+    }
+    .header__navbar-links {
+        display: none;
+    }
+    .excursion__form-wrapper {
+        flex-wrap: wrap;
+    }
+    .excursion__social {
+        display: none;
+    }
+    .excursion__subtitle hr {
+        display: none;
+    }
+    .excursion__subtitle p {
+        max-width: 100%;
+        text-align: center;
+    }
+    .footer__head {
+        padding-top: 2%;
+    }
+    .form__form-input {
+        background-color: $white;
+    }
+    .footer {
+        display: none;
+    }
+    .footer__mb {
+        display: block;
+    }
+    .payment {
+        display: none;
+    }
+    .payment__mb {
+        display: block ;
+    }
+}
+@media screen and (max-width: 800px) {
+    .conditions__card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .excursion__social {
+        margin: 22px auto;
+        justify-content: center;
+    }
+    .excursion__subtitle p {
+        max-width: 100%;
+        text-align: center;
+    }
+    .header__intro-slider {
+        display: none;
+    }
+    .territory__card-item {
+        width: 40%;
+    }
+    .conditions__intro {
+        display: none;
+    }
+    .title__block {
+        flex-direction: column;
+        text-align: left;
+        align-items: unset;
+        padding: 20px 0;
+        p {
+            margin: 10px 0;
+        }
+    }
+    .header__intro-item h1 {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+    .video__slider-btn {
+        display: none;
+    }
+    .reviews__slider-btn {
+        display: none;
+    }
+    .news__slider-btn {
+        display: none;
+    }
+    .excursion__form-wrapper {
+        margin: unset;
+    }
+    .excursion {
+        padding: 14% 0;
+    }
+    .contacts__card-item-body p {
+        display: none;
+    }
+    .contacts__wrapper-card-head {
+        flex-wrap: wrap;
+    }
+    .footer__body-mb {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer__head {
+        border-bottom: 1px solid $white1;
+        padding-top: 40px;
+    }
+    .footer__logo img {
+        width: 66%;
+        height: unset;
+    }
+    .header__mortgage-cards {
+        flex-wrap: wrap;
+    }
+    .header__mortgage-card-item {
+        width: 100%;
+        display: flex;
+        p {
+            margin-left: 10px;
+            font-size: 16px;
+            line-height: 17px;
+            font-weight: 500;
+        }
+    }
+    .documents__cards-wrapper-head {
+        flex-direction: column;
+    }
+    .documents__card-w30 {
+        max-width: 100%;
+    }
+    .documents__card-w70 {
+        max-width: 100%;
+    }
+    .header__finishing-intro-item h1 {
+        font-size: 26px;
+        line-height: 27px;
+        font-weight: 500;
+        text-align: left;
+    }
+    .header__finishing-intro-item p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .parametrs__intro h1 {
+        font-size: 26px;
+        line-height: 24px;
+        font-weight: 500;
+        text-align: left;
+    }
+}
+@media screen and (max-width: 500px) {
+    .territory__card-item {
+        width: 100%;
+    }
+    .header__intro-checks button {
+        font-size: 12px;
+        line-height: 12px;
+        font-weight: 400;
+    }
+    .header__intro-item h1 {
+        font-size: 32px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+    .title__block h1 {
+        font-size: 26px;
+        line-height: 24px;
+        font-weight: 500;
+    }
+    .title__block p {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 400;
+    }
+    .conditions__card-title h2 {
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 600;
+    }
+    .conditions__card-subtitle p {
+        font-size: 12px;
+        line-height: 13px;
+        font-weight: 500;
+    }
+    .main__btn {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+    }
+    .territory__card-title h3 {
+        font-size: 12px;
+        line-height: 13px;
+        font-weight: 400;
+    }
+    .feedback__intro-title h3 {
+        font-size: 26px;
+        line-height: 26px;
+        font-weight: 500;
+    }
+    .feedback__intro-title p {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+    }
+    .form__form-polit label {
+        font-size: 11px;
+        line-height: 13px;
+        font-weight: 400;
+    }
+    .form__form-polit label a {
+        font-size: 11px;
+        line-height: 13px;
+        font-weight: 400;
+    }
+    .life__intro h1 {
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 24px;
+        position: unset;
+    }
+    .life__card-button {
+        left: 35%;
+    }
+    .excursion__intro h1 {
+        font-size: 26px;
+        line-height: 27px;
+        font-weight: 500;
+    }
+    .excursion__subtitle p {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+    }
+    .documents__card-img h4 {
+        font-size: 16px;
+        line-height: 17px;
+        font-weight: 500;
+    }
+    .documents__card-subtitle p {
+        font-size: 12px;
+        line-height: 13px;
+        font-weight: 400;
+    }
 }
